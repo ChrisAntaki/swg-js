@@ -94,6 +94,23 @@ exports.compile = async (options = {}) => {
         options
       )
     ),
+    compileScript(
+      './src/',
+      'publisher-button-main.ts',
+      './dist',
+      Object.assign(
+        {
+          toName: 'publisher-button.max.js',
+          minifiedName: options.checkTypes
+            ? 'publisher-button.checktypes.js'
+            : args.minifiedPublisherName || 'publisher-button.js',
+          // If there is a sync JS error during initial load,
+          // at least try to unhide the body.
+          wrapper: '(function(){<%= contents %>})();',
+        },
+        options
+      )
+    ),
   ]);
 };
 

@@ -58,6 +58,10 @@ const SWG_BASIC_JS_URLS = {
   qual: 'https://news.google.com/swg/js/v1/swg-basic-qual.js',
 };
 
+const PUBLISHER_BUTTON_JS_URLS = {
+  local: '/dist/publisher-button.max.js',
+};
+
 const AUTH_COOKIE = 'SCENIC_AUTH';
 const METER_COOKIE = 'SCENIC_METER';
 const MAX_METER = 3;
@@ -260,6 +264,12 @@ app.get('/redirect-to/swg-gaa.js', (req, res) => {
 app.get('/redirect-to/swg-basic.js', (req, res) => {
   const setup = getSetup(req);
   res.redirect(SWG_BASIC_JS_URLS[setup.script]);
+});
+
+/** Redirects to Publisher Button JS for the chosen environment. */
+app.get('/redirect-to/publisher-button.js', (req, res) => {
+  const setup = getSetup(req);
+  res.redirect(PUBLISHER_BUTTON_JS_URLS[setup.script]);
 });
 
 /**

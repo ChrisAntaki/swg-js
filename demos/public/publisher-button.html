@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Publisher Button - Swgjs Demos</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="demos.css" />
+
+    <script
+      async
+      type="application/javascript"
+      src="/examples/sample-pub/redirect-to/publisher-button.js"
+    ></script>
+
+    <script type="application/ld+json">
+      [
+        {
+          "@id": "https://www.axios.com",
+          "@context": "https://schema.org",
+          "@type": "NewsMediaOrganization",
+          "name": "Axios",
+          "url": "https://www.axios.com",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://assets.axios.com/203e9f932cc97836ac2ff4c6c982676c.png"
+          },
+          "sameAs": [
+            "https://www.facebook.com/axios",
+            "https://www.instagram.com/axios",
+            "https://www.linkedin.com/company/axios-media/",
+            "https://www.threads.net/@axios",
+            "https://www.twitter.com/axios",
+            "https://www.youtube.com/axios"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "NewsArticle",
+          "articleSection": "Economy",
+          "datePublished": "2025-08-22T14:00:10.665418Z",
+          "description": "Powell described a complex mix of forces reshaping the economy.",
+          "headline": "Fed's Powell: May be time for another rate cut amid \"unusual\" job market",
+          "image": "https://images.axios.com/u3FTgKfT2lHTc0bNqxZyF24p-Fw=/2025/08/22/1755869250448.jpeg",
+          "url": "https://www.axios.com/2025/08/22/powell-interest-rates-trump-fed",
+          "dateModified": "2025-08-22T15:21:49.896275Z",
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://www.axios.com/2025/08/22/powell-interest-rates-trump-fed",
+            "breadcrumb": {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "item": {
+                    "@type": "WebPage",
+                    "name": "Axios",
+                    "@id": "https://www.axios.com"
+                  }
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "item": {
+                    "@type": "WebPage",
+                    "name": "Economy",
+                    "@id": "https://www.axios.com/economy/"
+                  }
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "item": {
+                    "@type": "WebPage",
+                    "name": "Fed's Powell: May be time for another rate cut amid \"unusual\" job market",
+                    "@id": "https://www.axios.com/2025/08/22/powell-interest-rates-trump-fed"
+                  }
+                }
+              ]
+            }
+          },
+          "author": [
+            {
+              "@type": "Person",
+              "name": "Neil Irwin",
+              "url": "https://www.axios.com/authors/nirwin"
+            }
+          ],
+          "publisher": {
+            "@type": "NewsMediaOrganization",
+            "name": "Axios",
+            "url": "https://www.axios.com",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://assets.axios.com/203e9f932cc97836ac2ff4c6c982676c.png"
+            }
+          },
+          "speakable": {
+            "@type": "SpeakableSpecification",
+            "url": "https://www.axios.com/2025/08/22/powell-interest-rates-trump-fed?utm_medium=speakable",
+            "xpath": ["//h1", "//span[@data-schema='smart-brevity']"]
+          },
+          "isAccessibleForFree": false,
+          "hasPart": {
+            "@type": "WebPageElement",
+            "isAccessibleForFree": false,
+            "cssSelector": ".gated-content"
+          }
+        }
+      ]
+    </script>
+
+    <script>
+      // ...
+    </script>
+  </head>
+
+  <body>
+    <div class="content">
+      <article>
+        <h2>Publisher Button</h2>
+
+        <p>
+          Macaroon chocolate wafer cake chocolate cake gummies soufflé lollipop
+          pie. Cheesecake cotton candy macaroon caramels pie.
+        </p>
+
+        <p>
+          <button publisher-button></button>
+        </p>
+
+        <p>
+          <button publisher-button theme="dark"></button>
+        </p>
+      </article>
+    </div>
+
+    <script src="demos.js"></script>
+  </body>
+</html>
